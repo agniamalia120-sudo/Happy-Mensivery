@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<title>Anniversary Run – Edisi Cowok</title>
+<title>Mensiversary Run – Edisi Cowok</title>
 <style>
   html, body { margin: 0; height: 100%; background: #13264d; overflow: hidden; touch-action: none; }
   body { display: flex; justify-content: center; font-family: Georgia, "Palatino Linotype", serif; }
@@ -44,7 +44,7 @@
   <canvas id="c"></canvas>
 
   <div class="screen show" id="sStart"><div class="card">
-    <h1>Anniversary Run</h1>
+    <h1>Mensivery Run</h1>
     <p>Larilah dan kumpulkan love sebanyak mungkin. Hindari batu!</p>
     <small>Geser jari / mouse, atau tekan ← → untuk bergerak.</small>
     <button class="btn" id="bStart">Mulai</button>
@@ -289,7 +289,7 @@ const MILESTONES = [10,20,30,40,50,60,70,80,90,100], GOAL = 100;  // ucapan munc
   function drawHUD() {
     ctx.textAlign = 'center'; ctx.lineWidth = 5; ctx.strokeStyle = '#1f3f9a'; ctx.fillStyle = '#fff'; ctx.lineJoin = 'round';
     ctx.font = 'italic 700 ' + W * .06 + 'px Georgia, serif';
-    ctx.strokeText('Happy Mensiversary', W * .5, H * .055); ctx.fillText('Happy Anniversary', W * .5, H * .055);
+    ctx.strokeText('Happy Mensiversary', W * .4, H * .055); ctx.fillText('Happy Mensiversary', W * .4, H * .055);
     const bx = W * .22, bw = W * .5, by = H * .055 + 14, bh = 14;
     ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.roundRect(bx, by, bw, bh, 7); ctx.fill();
     ctx.fillStyle = '#3d8bff'; ctx.beginPath(); ctx.roundRect(bx, by, Math.max(bh, bw * hearts / GOAL), bh, 7); ctx.fill();
